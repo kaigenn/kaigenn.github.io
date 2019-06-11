@@ -1,8 +1,39 @@
-<html>  
-<head>  
-<title>滑稽</title>  
-</head>  
-<body>  
-<input type=button value="点我" style="height:200px;width:200px;" onClick="var e=1;while(1==1){alert('我是你爸爸')}">  
-</body>  
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <title>滑稽</title>
+  <style type="text/css">
+      body {
+            background: #000;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "PingFang HK", sans-serif;
+            text-align: center;
+            position: relative;
+            top: 100px;
+
+            background-image: -webkit-linear-gradient(left, #3498db, #f47920 10%, #d71345 20%, #f7acbc 30%,
+            #ffd400 40%, #3498db 50%, #f47920 60%,
+            #d71345 70%, #f7acbc 80%, #ffd400 90%, #3498db);
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-size: 20% 100%;
+            animation: masked-animation 4s infinite linear;
+        }
+
+        @keyframes masked-animation {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -100% 0;
+            }
+        }
+  </style>
+</head>
+<body>
+  <h1>Welcome</h1>
+</body>
 </html>
