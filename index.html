@@ -1,39 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-  <meta charset="UTF-8">
-  <title>欢迎</title>
-  <style type="text/css">
-      body {
-            background: #000;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            font-family: "PingFang HK", sans-serif;
-            text-align: center;
-            position: relative;
-            top: 100px;
-
-            background-image: -webkit-linear-gradient(left, #3498db, #f47920 10%, #d71345 20%, #f7acbc 30%,
-            #ffd400 40%, #3498db 50%, #f47920 60%,
-            #d71345 70%, #f7acbc 80%, #ffd400 90%, #3498db);
-            color: transparent;
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-            background-size: 20% 100%;
-            animation: masked-animation 4s infinite linear;
-        }
-
-        @keyframes masked-animation {
-            0% {
-                background-position: 0 0;
-            }
-            100% {
-                background-position: -100% 0;
-            }
-        }
-  </style>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Live2D</title>
+    
+    <link rel="stylesheet" type="text/css" href="assets/waifu.css"/>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script> 
 </head>
 <body>
-  <h1>Welcome</h1>
+    <link rel="stylesheet" type="text/css" href="./assets/waifu.css">
+    <div class="waifu" id="waifu">
+        <div class="waifu-tips" style="opacity: 1;"></div>
+        <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+        
+    </div>
+    <script src="./assets/live2d.js"></script>
+    <script src="./assets/waifu-tips.js"></script>
+    <script type="text/javascript">initModel()</script>
 </body>
 </html>
